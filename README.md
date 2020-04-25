@@ -91,3 +91,8 @@ feel free to change the url to whatever picture you would like. Just make sure t
 Optional Extra Fun - Connecting APIs??
 ---------------------
 Inspect the site for an id or class of the element you want to customize and add it to your css file. 
+(tbd)
+
+
+resources: 
+https://medium.com/@LindaVivah/the-beginner-s-guide-build-a-simple-chrome-extension-in-minutes-498308ea406a
