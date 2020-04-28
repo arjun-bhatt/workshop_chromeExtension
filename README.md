@@ -78,7 +78,10 @@ In this case, we want our personalized page to have unique background:
 
 feel free to change the url to whatever picture you would like. Just make sure the url is of an image only.
 
-### Step 7: You're done!!
+### Step 7: Add a popup:
+
+
+### Step 8: You're done!!
 1. Save your files
 2. Go back to **chrome://extensions** in your browser
 3. Press "load unpacked" and reload your directory
