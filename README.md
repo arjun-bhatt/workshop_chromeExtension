@@ -6,8 +6,8 @@ Overview
 This tutorial will teach you how to setup a basic Chrome Extension that displays a specified image upon loading certain pages.
 
 
-Let's gooooooo! 
-Part 1 of 3 (Setup)
+
+Let's go! 
 ---------------------
 ### Step 1: Make a directory in terminal (name it however you like!)
 
