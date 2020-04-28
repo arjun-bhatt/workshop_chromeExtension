@@ -138,11 +138,6 @@ Now, styling time! Here is an example to get started. Feel free to make it perso
 
 
 
-Optional Extra Fun - Connecting APIs??
----------------------
-Inspect the site for an id or class of the element you want to customize and add it to your css file. 
-
-
 ## Reflection Questions:
 
 1. What functionality would you implement in an extension that could help in the day-to-day? For that functionality, would you use a page action or browser action for your icon in the browser? 
