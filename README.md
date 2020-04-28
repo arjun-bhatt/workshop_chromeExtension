@@ -1,5 +1,6 @@
 CS52 Workshops: Chrome Extensions!!!!!!!!
 ====================
+![](https://i.imgur.com/4DXxPO6.png)
 
 Overview
 ---------------------
