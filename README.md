@@ -78,6 +78,9 @@ In this case, we want our personalized page to have unique background:
        }
 
 Feel free to change the url to whatever picture you would like. Just make sure the url is of an image only.
+At this point if you unpack your extension again and navigate to google.com you should have this beautiful backdrop:
+  ![](https://i.imgur.com/tH0wwLU.jpg)
+Woohoo!
 
 ### Step 7: Add a Browser Action popup:
 
@@ -130,13 +133,18 @@ Now, styling time! Here is an example to get started. Feel free to make it perso
         font-family: 'Poiret One', cursive;
     }
 
+Now, when you reload your extension (load unpacked again) you should be able to click on the puzzle piece icon on any page and see your pop-up!
+
+![](https://i.imgur.com/ctOrXUi.png)
+
+
 ### Step 8: You're done!!
 1. Save your files
 2. Go back to **chrome://extensions** in your browser
 3. Press "load unpacked" and reload your directory
 4. Navigate to google.com and bask in the majesty of this golden retriever (or whatever picture you specified)!!
 
-
+![](https://i.imgur.com/ZQrwU8G.jpg)
 
 ## Reflection Questions:
 
