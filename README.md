@@ -100,7 +100,7 @@ Think about your favorite extension or a popular extension. Try to explain the f
 
 
 
-**Resources: **
+**Resources:**
 https://medium.com/@LindaVivah/the-beginner-s-guide-build-a-simple-chrome-extension-in-minutes-498308ea406a
 https://www.youtube.com/watch?v=YQnRSa8MGwM&list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS&index=7 
 https://developer.chrome.com/extensions/browserAction
