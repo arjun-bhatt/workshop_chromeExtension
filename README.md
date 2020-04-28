@@ -91,16 +91,19 @@ feel free to change the url to whatever picture you would like. Just make sure t
 Optional Extra Fun - Connecting APIs??
 ---------------------
 Inspect the site for an id or class of the element you want to customize and add it to your css file. 
-(tbd)
 
 
-resources: 
-https://medium.com/@LindaVivah/the-beginner-s-guide-build-a-simple-chrome-extension-in-minutes-498308ea406a
-
-
-Reflection Questions:
+### Reflection Questions:
 
 What functionality would you implement in an extension that could help in the day-to-day? Remember, an extension ought to fill a single purpose that's easy to understand and narrowly defined!
 
 Think about your favorite extension or a popular extension. Try to explain the features of the extension and how it was implemented. 
+
+
+
+
+**Resources: **
+https://medium.com/@LindaVivah/the-beginner-s-guide-build-a-simple-chrome-extension-in-minutes-498308ea406a
+https://www.youtube.com/watch?v=YQnRSa8MGwM&list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS&index=7 
+https://developer.chrome.com/extensions/browserAction
 
