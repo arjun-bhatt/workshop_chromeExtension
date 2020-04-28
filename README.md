@@ -3,7 +3,7 @@ CS52 Workshops: Chrome Extensions!!!!!!!!
 
 Overview
 ---------------------
-This tutorial will teach you how to setup a basic Chrome Extension that displays a specified image upon loading certain pages.
+This tutorial will teach you how to setup a basic Chrome Extension that displays a specified background image upon loading a certain page.
 
 
 
@@ -46,7 +46,7 @@ Toggle the checkbox in our extension to make sure it is on.
 
 ![](https://i.imgur.com/buUQyqX.png)
 
-Yay! now your extension
+Yay! now your extension should be loadable.
 
 ### Step 5: 
 Add content scripts to the manifest.json after "version": and before "page_action"{
@@ -60,7 +60,7 @@ Add content scripts to the manifest.json after "version": and before "page_actio
         ],
 
 The Matches part refers to the URL what we want our extension to modify/personalize. Here, we are setting it to google.com. We can link other files to content scripts. 
-Since we are changing the background, let's add a css file.
+Since we want to change the background, let's add a css file.
 
 ### Step 6: Create the CSS file!
 
