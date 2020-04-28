@@ -1,7 +1,5 @@
 CS52 Workshops: Chrome Extensions!!!!!!!!
 ====================
-Ever thought about 
-
 
 Overview
 ---------------------
