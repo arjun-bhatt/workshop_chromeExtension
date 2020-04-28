@@ -17,9 +17,9 @@ Let's go!
 
     touch manifest.json
 
-This manifest.json file is necessary for every chrome extension. It holds the metadata on the extensions's information, such as title, description, etc.
+This `manifest.json` file is necessary for every chrome extension. It holds the metadata on the extensions's information, such as title, description, etc.
 
-Open manifest.json and paste this code into the file: 
+Open `manifest.json` and paste this code into the file: 
 
     {
         "manifest_version": 2,
@@ -40,7 +40,7 @@ Open manifest.json and paste this code into the file:
 ![](https://i.imgur.com/WWFnigM.png)
 
 ### Step 4: Click "Load Unpacked" and select your directory
-This step is to check that the manifest.json file can be loaded correctly as an extension in your browser. If there are any errors, it will be displayed (ie missing a file, cannot read,etc). If there are no errors, the extension will load automatically.
+This step is to check that the `manifest.json` file can be loaded correctly as an extension in your browser. If there are any errors, it will be displayed (ie missing a file, cannot read,etc). If there are no errors, the extension will load automatically.
 
 Toggle the checkbox in our extension to make sure it is on. 
 
@@ -65,6 +65,7 @@ Since we are changing the background, let's add a css file.
 ### Step 6: Create the CSS file!
 
     touch main.css
+
 In this case, we want our personalized page to have unique background:
 
 
@@ -76,10 +77,58 @@ In this case, we want our personalized page to have unique background:
         font-size: 15px;
        }
 
-feel free to change the url to whatever picture you would like. Just make sure the url is of an image only.
+Feel free to change the url to whatever picture you would like. Just make sure the url is of an image only.
 
-### Step 7: Add a popup:
+### Step 7: Add a Browser Action popup:
 
+Add this to your `manifest.json` under content scripts:
+
+    "browser_action": {
+    "default_title": "My personalized google page!",
+    "default_popup": "popup.html",
+    }
+    
+What this is doing is creating a browser action in the toolbar (seen to the right of the address bar). A browser action can have a tooltip, icon, badge, and popup. Here, we want to make a popup, and so there there is a specification for the popup title and source.
+
+* *Fun Fact:* Similar to browser actions are page actions, where the extension icon lights up and the page actions have functionality only when the user is on the specified page url, matched in the content script. See 'More on Page Actions' under **Resources** at the bottom of this page for more info! Browser actions differ from page actions because they are enabled on all tabs and URLs. 
+
+We are going to make a popup for our browser action! Popups will display upon clicking the icon (default is the puzzle piece). Since this is for a browser function, this popup will display no matter what page you are on!
+
+The copied text above tells `manifest.json` to read the information for the popup from popup.html, so let's create it! 
+
+Create a `popup.html` file:
+
+    touch popup.html 
+
+Inside your `popup.html` file, add the following code (feel free to edit the body and make it a bit more original :) :
+
+    <!DOCTYPE html>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link href='https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&family=Poiret+One&family=Spectral:wght@400;600&display=swap' rel='stylesheet'    type='text/css' />
+
+    <html>
+        <body>
+            <h1>Go to google.com for a GOLDEN search experience!</h1>
+            <img src="dog.jpg" height="140px" width="100px">
+        </body>
+    </html>
+
+Let's add some *style* to this popup! You may have noticed that in the code above, we have added a CSS styling file, as well as some fonts. Feel free to modify as you wish. 
+
+Make the file `popup.css`!
+
+    touch popup.css
+
+Now, styling time! Here is an example to get started. Feel free to make it personal!
+
+    body{
+        background-color: goldenrod;
+    }
+
+    h1{
+        color: lightyellow;
+        font-family: 'Poiret One', cursive;
+    }
 
 ### Step 8: You're done!!
 1. Save your files
@@ -94,17 +143,17 @@ Optional Extra Fun - Connecting APIs??
 Inspect the site for an id or class of the element you want to customize and add it to your css file. 
 
 
-### Reflection Questions:
+## Reflection Questions:
 
-What functionality would you implement in an extension that could help in the day-to-day? Remember, an extension ought to fill a single purpose that's easy to understand and narrowly defined!
+1. What functionality would you implement in an extension that could help in the day-to-day? For that functionality, would you use a page action or browser action for your icon in the browser? 
 
-Think about your favorite extension or a popular extension. Try to explain the features of the extension and how it was implemented. 
+2. Think about your favorite extension or a popular extension. Try to explain the features of the extension and how it was implemented. 
 
 
 
 
 **Resources:**
-https://medium.com/@LindaVivah/the-beginner-s-guide-build-a-simple-chrome-extension-in-minutes-498308ea406a
-https://www.youtube.com/watch?v=YQnRSa8MGwM&list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS&index=7 
-https://developer.chrome.com/extensions/browserAction
-
+- More on Browser Actions: https://developer.chrome.com/extensions/browserAction
+- More on Page Actions: https://developer.chrome.com/extensions/pageAction
+- https://medium.com/@LindaVivah/the-beginner-s-guide-build-a-simple-chrome-extension-in-minutes-498308ea406a
+- https://www.youtube.com/watch?v=YQnRSa8MGwM&list=PLRqwX-V7Uu6bL9VOMT65ahNEri9uqLWfS&index=7 
